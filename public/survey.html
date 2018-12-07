@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Friend Finder!</h1>
+            <p class="lead">Answer the survey questions below to the best of your knowledge, and let us help you find a
+                match!</p>
+            <hr class="my-4">
+            <p>Let's Get Started!</p>
+            <a id="home_button" class="btn btn-primary btn-lg" href="/" role="button">Go Home</a>
+        </div>
+
+        <br>
+        <form>
+            <h3>Please Enter Your Basic Information!</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Your Name</label>
+                <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name">
+                <small id="emailHelp" class="form-text text-muted">Field Required</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Photo Link</label>
+                <input type="email" class="form-control" id="photoLink" aria-describedby="photoHelp" placeholder="Photo">
+                <small id="emailHelp" class="form-text text-muted">Field Required</small>
+            </div>
+        </form>
+
+        <br><br>
+
+        <h4>Fill Out The Survey Questions Below</h4>
+        <p>Signal whether these traits are of least or of most importance to you.</p>
+        <form>
+            <div class="form-group">
+                <label for="q1">Values</label>
+                <select class="form-control" id="q1">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q2">Morals</label>
+                <select class="form-control" id="q2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q3">Politics</label>
+                <select class="form-control" id="q3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q4">Religion</label>
+                <select class="form-control" id="q4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q5">Athletics</label>
+                <select class="form-control" id="q5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q6">Hobbies</label>
+                <select class="form-control" id="q6">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q7">Interests</label>
+                <select class="form-control" id="q7">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q8">Location</label>
+                <select class="form-control" id="q8">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q9">Distance</label>
+                <select class="form-control" id="q9">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br>
+
+                <label for="q10">Family</label>
+                <select class="form-control" id="q10">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><br>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body text-center">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery Reference -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            var modalTitle = $('.modal-title');
+            var modalBody = $('.modal-body');
+
+            var newFriendName = $("#name").val().trim();
+            var newPhotoLink = $("#photoLink").val().trim();
+            var newFriendObject = {
+                name: newFriendName,
+                photo: newPhotoLink,
+                scores: [$("#q1").val().trim(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(),
+                    $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),
+                ]
+            };
+            console.log(newFriendObject);
+
+            $.post("/api/friends", newFriendObject,
+                function (data) {
+                    console.log(data);
+                    console.log("test posting to $.post(/api/friends")
+
+                    // If a table is available... tell user they are booked.
+                    if (data) {
+                        console.log("Yay! You are officially booked!");
+                        modalTitle.html('Your match is:');
+                        modalBody.html('<p>' + data.name + '!</p><img src="' + data.photo +
+                            '" height="200">');
+                    }
+
+                    // If a table is available... tell user they on the waiting list.
+                    else {
+                        alert("Sorry you are on the wait list");
+                    }
+                    $('.modal').modal('toggle');
+                });
+
+        })
+    </script>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            <a href="/api/friends">API Friends Link</a> |
+    </div>
+</footer>
+
+
+
+</html>
